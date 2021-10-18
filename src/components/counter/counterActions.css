@@ -1,0 +1,38 @@
+.container{
+   width: 50%;
+   margin: 0 auto;
+}
+ul{
+   display: block;
+   margin-left: 8rem;
+}
+.increment {
+
+	height: 50px;
+	width: 200px;
+	color:#fff;
+	font-size: 1rem;
+   background-color: purple;
+	text-transform: capitalize;
+	border: 1px solid purple;
+   margin-right: 2rem;
+
+}
+
+.decrement {
+
+	height: 50px;
+	width: 200px;
+	color:#fff;
+	font-size: 1rem;
+   background-color: plum;
+	text-transform: capitalize;
+	border: 1px solid plum;
+   margin-right: 2rem;
+
+}
+.count{
+   font-size: 2rem;
+   text-align: center;
+   color: purple;
+}
