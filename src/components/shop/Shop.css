@@ -1,3 +1,26 @@
-.header {
-   color :red;
+
+h2 ,h3 {
+   color :#89079A
 }
+
+.container{
+   width:90%;
+   margin:0 auto;
+}
+.product{
+   border: 1px solid #E4B0EA;
+   border-radius:1rem;
+}
+
+
+p{
+   color:#7C4290
+}
+.price{
+   border: 1px solid plum;
+   width:6rem;
+  margin: auto;
+   color:#fff;
+   background-color: purple;
+}
+

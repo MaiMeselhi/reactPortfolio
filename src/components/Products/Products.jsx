@@ -13,7 +13,7 @@ const Products = ({ match }) => {
       .then((json) => setProduct(json));
   };
   return (
-    <div className="d-flex flex-wrap  justify-content-center">
+    <div className="d-flex flex-wrap  justify-content-center py-5">
        {
           product && Object.keys(product).length >0
           ?

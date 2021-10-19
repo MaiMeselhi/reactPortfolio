@@ -1,6 +1,7 @@
 import "./Shop.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
 const Shop = () => {
   useEffect(() => {
@@ -14,31 +15,30 @@ const Shop = () => {
       .then((json) => setProducts(json));
   };
   return (
-    <>
-      <div className="header d-flex flex-wrap  justify-content-center">
-        <h2>Shop Now</h2>
-      </div>
-
-      <div className="d-flex flex-wrap  justify-content-center">
+    <div class="container">
+      <h2 class="py-5 text-center ">Shop Now</h2>
+      <section className="d-flex flex-wrap justify-content-center">
         {products.map((product) => {
           return (
-            <Link to={`/Shop/${product.id}`} key={product.id}>
-              <div className="product text-center p-1 mb-2 border me-2">
-                <img
-                  className="image w-25"
-                  src={product.image}
-                  alt="productimage"
-                />
-                <h3>{product.title}</h3>
-                <p>{product.price}</p>
-                <p>{product.description}</p>
-                <p>{product.category}</p>
-              </div>
+            <Link
+              to={`/Shop/${product.id}`}
+              key={product.id}
+              key={product.id}
+              className="product w-25 p-1 mb-3 me-3 text-center"
+            >
+              <img
+                className="image w-50"
+                src={product.image}
+                alt="productimage"
+              />
+              <h3>{product.title}</h3>
+              <p className="price">price:{product.price}</p>
+              <p>{product.category}</p>
             </Link>
           );
         })}
-      </div>
-    </>
+      </section>
+    </div>
   );
 };
 export default Shop;
