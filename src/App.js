@@ -7,7 +7,9 @@ import Nav from "./components/Navbar/Navbar";
 import Home from './components/Home/Home';
 import About from "./components/About/About";
 import Shop from "./components/shop/Shop";
+import Products from "./components/Products/Products"
 import Counter from './components/counter/counterActions';
+
 function App() {
 return (
 
@@ -16,12 +18,13 @@ return (
      <Router>
      <Nav />
       <div className="container">
-          <switch>
+          <Switch>
             <Route component={Home} path="/" exact/>
             <Route component={About} path="/About"/>
             <Route component={Container} path="/Container"/>
-            <Route component={Shop} path="/Shop" />
-          </switch>
+            <Route component={Shop} path="/Shop" exact />
+            <Route component={Products} path="/Shop/:id" />
+          </Switch>
       </div>
 
 
