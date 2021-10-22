@@ -1,6 +1,7 @@
 .content {
 
    margin:0 0 20rem 15rem;
+
 }
 
 
@@ -17,10 +18,19 @@ h5{
 }
 
 .delete{
+   width: 2rem;
    margin:1rem  auto;
    cursor: pointer;
+   text-align: center;
    background-color: purple;
    border: 1px solid purple;
    color: #fff;
    background-image: linear-gradient(to right top, #df67ef, #b64fc8, #8e37a3, #69207e, #46085b);
+}
+
+ul {
+   list-style: none;
+   text-decoration: none;
+   display: block;
+   margin: auto;
 }

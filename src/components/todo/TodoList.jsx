@@ -10,7 +10,7 @@ const TodoList = ({ todos,id,deleteTodo }) => {
             <div className="text">
               <p >Title : {todo.title}</p>
               <p className=" ps-5">Content : {todo.content}</p>
-              <button onClick={() => deleteTodo(i)} className="delete">Delete Todo</button>
+              <p onClick={() => deleteTodo(i)} className="delete">X</p>
             </div>
             </li>
           </ul>
@@ -22,7 +22,6 @@ const TodoList = ({ todos,id,deleteTodo }) => {
 
   return (
     <div className="text-center content">
-      <h5 className=" my-2 text-center">Todos</h5>
       {todosList}
     </div>
   );

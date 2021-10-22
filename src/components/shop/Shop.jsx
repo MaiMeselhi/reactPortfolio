@@ -2,6 +2,7 @@ import "./Shop.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import { Spinner } from "react-bootstrap";
 
 const Shop = () => {
   useEffect(() => {
@@ -18,7 +19,11 @@ const Shop = () => {
     <div class="container">
       <h2 class="py-5 text-center ">Shop Now</h2>
       <section className="d-flex flex-wrap justify-content-center">
-        {products.map((product) => {
+
+        {
+          products && products.length>0
+          ?
+        products.map((product) => {
           return (
             <Link
               to={`/Shop/${product.id}`}
@@ -36,7 +41,12 @@ const Shop = () => {
               <p>{product.category}</p>
             </Link>
           );
-        })}
+        })
+        :
+        <Spinner animation="border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>
+      }
       </section>
     </div>
   );

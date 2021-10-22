@@ -1,0 +1,35 @@
+.form {
+   margin: 5% 35%;
+}
+label {
+   margin-right: 50rem;
+   font-weight: bold;
+   color: plum;
+   width: 20rem;
+}
+
+
+input {
+    display: block;
+    height:3rem;
+    border-radius: 0.5rem;
+    border: 1px solid purple;
+}
+ input[type="checkbox"]
+ {
+    height:1rem;
+    margin-top:0
+ }
+
+.register{
+   width: 20rem;
+   height: 3rem;
+   margin:1rem  auto;
+   cursor: pointer;
+   text-align: center;
+   background-color: purple;
+   border: 1px solid purple;
+   color: #fff;
+   background-image: linear-gradient(to right top, #df67ef, #b64fc8, #8e37a3, #69207e, #46085b);
+}
+

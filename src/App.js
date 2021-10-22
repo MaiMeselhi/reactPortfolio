@@ -8,6 +8,8 @@ import Home from './components/Home/Home';
 import About from "./components/About/About";
 import Shop from "./components/shop/Shop"
 import Products from "./components/Products/Products"
+import Login from './components/login/Login';
+import RegiserFormikComponents from './components/Register/Register';
 import Counter from './components/counter/counterActions';
 import Todo from './views/todo/Todo';
 
@@ -20,8 +22,9 @@ return (
      <Nav />
       <div className="container">
           <Switch>
-            <Route component={Home} path="/" exact/>
-            <Route component={About} path="/About"/>
+            <Route component={About} path="/" exact/>
+            <Route component={Login} path="/Login"/>
+            <Route component={RegiserFormikComponents} path="/Register"/>
             <Route component={Todo}  path="/Todo"/>
             <Route component={Container} path="/Container"/>
             <Route component={Shop} path="/Shop" exact />
