@@ -1,6 +1,7 @@
 import { createStore } from "redux";
 
 const ADD_TODO = "ADD_TODO";
+const DELETE_TODO ="DELETE_TODO"
 //action
 export const addTodoAction = (payload) => {
   return {
@@ -9,7 +10,12 @@ export const addTodoAction = (payload) => {
   };
 };
 
-
+export const deleteTodoAction = key => {
+  return {
+    type:DELETE_TODO,
+    payload:key,
+  };
+};
 //state
 
 const initialState = {
@@ -30,6 +36,8 @@ const todoReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:
       return { ...state, todos: [...state.todos, action.payload] };
+    case DELETE_TODO:
+      return { ...state, todos:state.todos.filter((todo,i) => i !== action.payload) };
     default:
       return state;
   }

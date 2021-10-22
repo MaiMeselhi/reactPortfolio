@@ -1,6 +1,6 @@
 import "./TodoList.css"
 
-const TodoList = ({ todos,deleteTodo }) => {
+const TodoList = ({ todos,id,deleteTodo }) => {
   const todosList =
     todos && todos.length > 0 ? (
       todos.map((todo, i) => {
@@ -9,8 +9,8 @@ const TodoList = ({ todos,deleteTodo }) => {
             <li className="item border d-flex">
             <div className="text">
               <p >Title : {todo.title}</p>
-              <p class=" ps-5">Content : {todo.content}</p>
-              <button onClick={deleteTodo} class="delete">Delete Todo</button>
+              <p className=" ps-5">Content : {todo.content}</p>
+              <button onClick={() => deleteTodo(i)} className="delete">Delete Todo</button>
             </div>
             </li>
           </ul>
