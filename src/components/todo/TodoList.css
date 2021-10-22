@@ -1,0 +1,26 @@
+.content {
+
+   margin:0 0 20rem 15rem;
+}
+
+
+
+p{
+   color: purple;
+   font-weight: bold;
+}
+
+h5{
+   color: plum;
+   padding-left: 10rem;
+
+}
+
+.delete{
+   margin:1rem  auto;
+   cursor: pointer;
+   background-color: purple;
+   border: 1px solid purple;
+   color: #fff;
+   background-image: linear-gradient(to right top, #df67ef, #b64fc8, #8e37a3, #69207e, #46085b);
+}

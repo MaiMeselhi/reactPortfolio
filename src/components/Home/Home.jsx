@@ -1,7 +1,7 @@
 function Home() {
    return (
      <h2>
-       Shop Here
+       Home
      </h2>
    );
  }

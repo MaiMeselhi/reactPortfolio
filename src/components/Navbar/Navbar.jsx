@@ -5,10 +5,10 @@ const Nav = () => {
    return (
 
      <nav className="nav d-flex justify-content-around align-items-center">
-       <h3 class="logo">Brand</h3>
+       <h3 className="logo">Brand</h3>
        <ul className="d-flex justify-content-around align-items-center w-50">
-       <Link to="/Shop"> <li className="list-item">Home</li></Link>
-
+       <Link to="/Home"> <li className="list-item">Home</li></Link>
+       <Link to="/Todo"> <li className="list-item">Todo List</li></Link>
        <Link to="/About"> <li className="list-item">About</li></Link>
        <Link to="/Shop"> <li className="list-item">Shop</li></Link>
 

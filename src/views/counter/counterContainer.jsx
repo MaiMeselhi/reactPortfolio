@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Counter from '../components/counter/counterActions';
+import Counter from '../../components/counter/counterActions';
 
 function Container() {
 
